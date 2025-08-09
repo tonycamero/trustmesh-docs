@@ -1,0 +1,16 @@
+# Node & tooling
+node_modules/
+.DS_Store
+.env*
+.cache/
+dist/
+
+# Assets
+assets/exports/
+
+# Sensitive materials kept out of git
+secure/**
+
+# Editor
+.vscode/
+.idea/

@@ -1,0 +1,9 @@
+# Example CODEOWNERS — replace with real GitHub handles
+* @trustmesh-core
+1_overview/ @product-lead
+2_architecture/ @arch-lead @security-lead
+3_ux_workflows/ @design-lead
+4_research_academic/ @research-lead
+5_development_plan/ @pm-lead
+6_legal_compliance/ @legal-counsel
+7_collaboration_governance/ @ops-lead
