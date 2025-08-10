@@ -15,3 +15,4 @@ secure/**
 .vscode/
 .idea/
 docs_update_*.md
+corpus_sync_*.md
