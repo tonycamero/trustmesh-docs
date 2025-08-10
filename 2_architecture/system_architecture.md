@@ -12,7 +12,7 @@
 - **Secrets & Privacy:** Cohort-peppered HMAC IDs derived in **KMS/HSM**; pepper versioning & rotation
 
 ## Data Flows
-- **Commitment:** COMMIT ? (UNBOND) ? REVOKE; registry updates bitmap; indexer reduces to edges; hourly checkpoint
+- **Commitment:** COMMIT → (UNBOND) → REVOKE; registry updates bitmap; indexer reduces to edges; hourly checkpoint
 - **Contacts:** CONTACT_ADD/REMOVE; indexer maintains private graph; opt-in sharing
 - **Messaging:** XMTP consent/block/report + rate limits; HCS triggers; SMS invites only
 - **Payments:** TRST transfers via Brale/MatterFi; KNS resolution; policy **pay trusted first**

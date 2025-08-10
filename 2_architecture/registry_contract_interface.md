@@ -1,4 +1,4 @@
-# Trust Slot Registry � Contract Interface (Draft)
+# Trust Slot Registry — Contract Interface (Draft)
 
 - **Purpose:** On-chain guardrails for max 9 active commitments per user; indexer becomes a verifier.
 
@@ -9,10 +9,10 @@
 
 ## Methods
 
-- `commit(bytes32 digest, bytes sig)` ? sets bit for `tokenID` after verifying signature
-- `unbond(bytes32 digest, bytes sig)` ? marks slot pending
-- `revoke(bytes32 digest, bytes sig)` ? clears bit post-delay
-- `checkpoint(bytes32 merkleRoot, bytes32 schemaHash)` ? optional anchoring
+- `commit(bytes32 digest, bytes sig)` → sets bit for `tokenID` after verifying signature
+- `unbond(bytes32 digest, bytes sig)` → marks slot pending
+- `revoke(bytes32 digest, bytes sig)` → clears bit post-delay
+- `checkpoint(bytes32 merkleRoot, bytes32 schemaHash)` → optional anchoring
 
 ## Security
 

@@ -5,7 +5,7 @@
 - Payments loop (**TRST via Brale/MatterFi**; KNS)
 - Engagement loop (NFT/hashinal rewards)
 - Circle of Trust (9 **DBTs**; quiet unbonding; per-slot cooldown)
-- **Contacts (lite trust)** � unlimited, low weight, private by default
+- **Contacts (lite trust)** — unlimited, low weight, private by default
 - Indexer with **hourly** Merkle checkpoints to HCS topic
 - Privacy: cohort-peppered HMAC, functional deletion
 - Recovery: **Magic.link** (passkeys); **DeRec post-MVP**
@@ -17,4 +17,4 @@
 
 **Out of scope (MVP)**
 - Non-TRST payment rails
-- Global �reputation scores� (aggregate trends only)
+- Global -reputation scores- (aggregate trends only)
