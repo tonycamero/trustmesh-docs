@@ -14,3 +14,4 @@ secure/**
 # Editor
 .vscode/
 .idea/
+docs_update_*.md
