@@ -1,5 +1,5 @@
 # Contribution Guidelines
 
-- Use feature branches; write meaningful commit messages
-- Propose changes via PRs referencing issues/decisions
-- Keep docs atomic; update diagrams when architecture changes
+- Keep **Hedera-first / TRST-first / XMTP-first** architecture.  
+- Feature branches + PRs; link issues; update docs/diagrams on change.  
+- No duplicate loop logic without an integration plan.

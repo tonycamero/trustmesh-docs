@@ -1,7 +1,6 @@
 # Meeting Notes
 
 Template:
-
 - Date/Time
 - Attendees
 - Decisions

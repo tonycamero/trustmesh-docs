@@ -1,6 +1,7 @@
 # Identity & Onboarding
 
-- Primary auth: **Passkeys (WebAuthn)**; OTP assists discovery only.
-- Social recovery: 2-of-3 guardians with time-locked recovery.
-- Cohort-salted pseudonymous IDs via HMAC(phone, cohortPepper) stored in HSM.
-- SIM-swap safeguards: optional email/SSO attestation and delayed rekeys.
+- **Primary auth:** Passkeys (WebAuthn) via **Magic.link**
+- **Recovery:** Magic.link recovery; **DeRec** planned post-MVP
+- **Discovery:** OTP assists wallet claim/invite only
+- **Pseudonymity:** Cohort-peppered HMAC for phone/alias; optional public pseudonyms
+- **Wallets:** Non-custodial Hedera (Ed25519); keys bound to device (DBTs)

@@ -1,4 +1,5 @@
-# Faculty Engagement Materials
+# Faculty Engagement
 
-- Purpose letter, IRB coordination notes, data handling summary.
-- Cohort codes and opt-in language.
+- One-pager + demo: trust as scarce, revocable signal; cohort pseudonymity; research value.  
+- Consent model, DPIA/TIA summary, and IRB-ready deployment checklist.  
+- Data access = aggregates by default; de-identified microdata by separate consent.

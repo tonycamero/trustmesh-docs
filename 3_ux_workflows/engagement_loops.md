@@ -1,6 +1,7 @@
-# Engagement Loops & Gamification
+# Engagement Loops
 
-- Scarcity education via ring-of-nine visuals
-- Reciprocity nudge post-claim
-- Structured reasons (templates) to reduce toxicity
-- Aggregate-only public trends by tag; no names by default
+- **Ring of Nine:** Visual slots (Strong trust).  
+- **Reciprocity Nudge:** �Commit 1 back?� after acceptance.  
+- **Cooldown UX:** Shows time until slot re-opens after unbond/revoke.  
+- **Campaign Rewards:** NFTs/hashinals for actions (proof-of-presence; burn-on-redeem at POS).  
+- **No global scores:** Public dashboards show **aggregate tag trends** only.

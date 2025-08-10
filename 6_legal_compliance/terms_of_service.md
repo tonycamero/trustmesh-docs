@@ -1,5 +1,6 @@
-# Terms of Service (Placeholder)
+# Terms of Service (Draft Highlights)
 
-- User consent to pseudonymous processing
-- Community standards & anti-abuse
-- Revocation and content guidelines
+- Non-financial social signal; no trading/yield.  
+- Privacy by design; pseudonymous IDs; aggregate visibility by default.  
+- Prohibited content & abuse policy; enforcement & appeal.  
+- Consent for messaging; jurisdiction & arbitration placeholders.

@@ -1,5 +1,6 @@
-# Tokenization & Trust Slots
+# Tokenization Model
 
-- Conceptual model: **9 per-user slots** (not transferable tokens in MVP).
-- Events mutate slot state; no balances move.
-- Future HTS path: frozen balances + registry contract enforces slot rules.
+- **Strong trust:** **Device-Bound Tokens (DBTs)** = your 9 commitment slots. DBTs are **not NFTs**; they�re device-key-bound authorizations managed by the Registry.
+- **Lite trust:** **Contacts** are unlimited, consented connections; private by default; low analytic weight.
+- **Engagement assets:** **NFTs** (redeemable/POAP) and **hashinals** as portable, **non-financial** artifacts for campaigns and acknowledgments.
+- **Revocation:** Quiet unbonding (~72h) ? REVOKE ? per-slot cooldown (~14d). No public shaming.
