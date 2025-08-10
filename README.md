@@ -1,24 +1,42 @@
 # TrustMesh Documentation Repository
 
-This repository hosts the **authoritative corpus** for TrustMesh: product vision, technical architecture, UX, research posture, governance, and compliance.
+This repository is the **authoritative source** for the TrustMesh product vision, architecture, UX, compliance, and deployment model ï¿½ built on the Scend Context Engineering kernel.
 
-## How this repo is organized
-- `1_overview/` — Vision, positioning, principles
-- `2_architecture/` — System design, protocols, specs
-- `3_ux_workflows/` — Flows, wireframes, interaction patterns
-- `4_research_academic/` — Research alignment, KPIs, pilot plans
-- `5_development_plan/` — Roadmaps, sprints, risks, deployment
-- `6_legal_compliance/` — GDPR, TCPA, ToS, retention/deletion
-- `7_collaboration_governance/` — Contrib guide, comms, style, glossary
-- `assets/` — Diagrams, wireframes, and exported visuals
-- `secure/` — **Sensitive docs** (git-ignored); store encrypted or off-repo
+## Core Mandate
+TrustMesh is a **Hedera-first**, privacy-preserving trust graph that turns IRL trusted relationships into **cryptographically verifiable commitments**.
 
-## Quick start
-1. Read `1_overview/vision.md`.
-2. Engineers start at `2_architecture/system_architecture.md` and `2_architecture/state_spec_v0.1.md`.
-3. Designers start at `3_ux_workflows/sms_flow.md`.
-4. For pilots/academics, see `4_research_academic/`.
+Every deployment must implement the **three context loops** in this order:
+NOTE: Context Loops are sequential in activation (Messaging must be live before Payments, before Engagement) ï¿½ this matches the operating philosophy in CONTEXT_ENGINNERING.md
 
-## Contributing
-See `7_collaboration_governance/contribution_guidelines.md` and `.github/PULL_REQUEST_TEMPLATE.md`.
+1. **Messaging** ï¿½ **XMTP-powered** threads by wallet or alias. *XMTP is not SMS.* SMS is used only for **invites/claims**; all chat occurs over XMTP. HCS10 emits system/campaign triggers.
+2. **Payments** ï¿½ **TRST stablecoin** via **Brale** (KYC/AML + custody/compliance) with **MatterFi SDK** for flows. Wallets auto-provisioned; **Send-to-Name (KNS)** and QR-pay supported.
+3. **Engagement** ï¿½ Hedera **NFT/hashinal** rewards and **Circle of Trust** allocations (9 **device-bound** commitment slots per user, quiet unbonding, immutable acceptance).
 
+### Non-Negotiables
+- **TRST is the only payment rail** for stablecoin flows in MVP (**Brale handles KYC/AML**).
+- **Circle of Trust** governs strong trust: **9 device-bound tokens (DBTs)** per user; revocable with quiet unbonding and per-slot cooldowns.
+- **Contacts (lite trust) are included**: unlimited, consented connections for discovery/routing; low weight; private by default.
+- **Hedera-first**: HTS for assets, HCS10 for events, hashinals for portable reputation.
+- **Licensed kernel** ï¿½ not public open source. Cloning/deployments require contractual authorization.
+
+## Repository Structure
+- **1_overview/** ï¿½ Vision, positioning, Circle of Trust principles  
+- **2_architecture/** ï¿½ Hedera-based system design, protocol, specs  
+- **3_ux_workflows/** ï¿½ Loop-driven UX (Messaging ? Payments ? Engagement)  
+- **4_research_academic/** ï¿½ Research alignment, IRB-ready privacy posture  
+- **5_development_plan/** ï¿½ MVP scope, sprints, risks, deployment  
+- **6_legal_compliance/** ï¿½ GDPR, CCPA, TCPA, data retention  
+- **7_collaboration_governance/** ï¿½ Contribution guidelines, glossary, style  
+- **assets/** ï¿½ Diagrams, wireframes, visuals  
+- **secure/** ï¿½ Sensitive docs (git-ignored; encrypt or store off-repo)
+
+## Quick Start
+1. Read `1_overview/vision.md` and `positioning.md`.  
+2. Engineers: `2_architecture/system_architecture.md` + `state_spec_v0.1.md`.  
+3. Designers: `3_ux_workflows/circle_of_trust_flow.md` + `wallet_creation.md`.  
+4. Pilots/research: `4_research_academic/`.
+
+## Licensing & Deployment
+- **Private kernel** ï¿½ licensed via Scend Technologies, LLC.  
+- Cloneable for approved partners (civic, campus, enterprise).  
+- **No public open-source distribution**.

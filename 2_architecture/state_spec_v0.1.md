@@ -1,29 +1,29 @@
 # State Spec v0.1
 
 ## Event Types
-- `ALLOCATE` — mint/enable slots `0..8` for `userPubKey`
-- `COMMIT` — bind `tokenID` to `recipientHash` with `tag`, optional `reasonHash`
-- `UNBOND` — start quiet-unbond timer for `tokenID`
-- `REVOKE` — finalize removal of an active commitment (post-delay)
-- `RECOVER` — rotate keys/guardians; includes previous key, new key, and proof
-- *(Optional)* `VERIFY` — device/passkey attestation record
-- *(Optional)* `REKEY` — cohort pepper rotation announcement
+- `ALLOCATE` ï¿½ enable 9 DBT slots for `userPubKey`
+- `COMMIT` ï¿½ bind `slotID` ? `recipientHash` with `tag`, optional `reasonHash`
+- `UNBOND` ï¿½ start quiet-unbond timer (`unbondAt`)
+- `REVOKE` ï¿½ finalize removal post-delay; frees slot; sets `cooldownUntil`
+- `RECOVER` ï¿½ rotate keys/guardians: `{ oldPubKey, newPubKey, guardians[], proof }`
+- `VERIFY_DEVICE` ï¿½ device/passkey attestation record (Magic.link)
+- `CONTACT_ADD` ï¿½ `{ ownerId, contactId, channel, ts }`
+- `CONTACT_REMOVE` ï¿½ remove contact
+- `REKEY` ï¿½ cohort pepper rotation announcement
+- `CHECKPOINT` ï¿½ indexer announces `{ merkleRoot, schemaHash, height, ts }` to checkpoint topic
 
 ## Required Fields (all events)
-`{ schema: "trustmesh/state/0.1", chainId, topicId, txId, ts, userPubKey, tokenID, nonce, sig }`
-
-Plus per-type fields:
-- `COMMIT`: `{ recipientHash, tag, reasonHash?, cooldownUntil? }`
-- `UNBOND`: `{ tokenID, unbondAt }`
-- `REVOKE`: `{ tokenID, revokeAt }`
-- `RECOVER`: `{ oldPubKey, newPubKey, guardians[], proof }`
+{ schema:"trustmesh/state/0.1", chainId, topicId, txId, ts,
+  userPubKey, slotID?, nonce, sig, cohortId, pepperVersion }
 
 ## Rules
-- **Idempotency:** `(userPubKey, tokenID, nonce)` unique.
-- **Validity:** tokenID ? [0..8]; only one active commitment per tokenID.
-- **Cooldown:** per-slot; `COMMIT` invalid if now < `cooldownUntil`.
-- **Ordering:** indexers must process by `(ts, txId)`; ties broken by `txId`.
+- **Idempotency:** `(userPubKey, (slotID|eventKey), nonce)` unique
+- **Slots:** `slotID ? [0..8]`; **one active commitment per slot**
+- **Quiet Unbonding:** default **72h** between `UNBOND` and `REVOKE`
+- **Cooldown:** per-slot; default **14 days**; `COMMIT` invalid if `now < cooldownUntil`
+- **Contacts:** unlimited; private by default; low weight (policy below)
+- **Ordering:** reduce by `(ts, txId)`; tie-break on `txId`
+- **Checkpoint cadence:** **hourly** Merkle to dedicated HCS topic; verifiers must check continuity
 
-## Checkpointing
-- Indexers produce hourly Merkle roots over deterministic state.
-- Publish `{ merkleRoot, schemaHash, height, ts }` to a dedicated HCS topic.
+## Pseudonymity
+`recipientHash` and user IDs = `HMAC_SHA256(cohortPepper[vX], E164(phone)|walletAlias)`; peppers via HKDF; stored in KMS/HSM.

@@ -10,8 +10,8 @@ about: Create a report to help us improve
 **Expected behavior**
 
 **Environment**
+
 - App version:
 - OS/Device:
 
 **Additional context**
-

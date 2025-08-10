@@ -12,4 +12,3 @@ about: Suggest an idea for TrustMesh
 **Risks & assumptions**
 
 **Definition of done**
-

@@ -1,0 +1,20 @@
+{
+  "name": "trustmesh-docs",
+  "version": "1.0.0",
+  "description": "This repository hosts the **authoritative corpus** for TrustMesh: product vision, technical architecture, UX, research posture, governance, and compliance.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "validate": "\"C:\\\\Program Files\\\\Git\\\\bin\\\\bash.exe\" scripts/validate_docs.sh",
+    "lint:md": "markdownlint **/*.md --ignore node_modules",
+    "fmt": "prettier -w **/*.{md,mdx,json,yml,yaml}",
+    "check": "npm run lint:md && npm run validate"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "markdownlint-cli": "^0.45.0",
+    "prettier": "^3.6.2"
+  }
+}

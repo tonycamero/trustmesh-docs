@@ -1,0 +1,447 @@
+warning: in the working copy of '.github/ISSUE_TEMPLATE/bug_report.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '.github/ISSUE_TEMPLATE/feature_request.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '.github/PULL_REQUEST_TEMPLATE.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '1_overview/positioning.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '1_overview/vision.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '2_architecture/api_spec.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '2_architecture/privacy_security.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '2_architecture/registry_contract_interface.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '2_architecture/state_spec_v0.1.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '2_architecture/system_architecture.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '4_research_academic/data_privacy.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '5_development_plan/mvp_scope.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '5_development_plan/risk_assessment.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '6_legal_compliance/tcpacompliance.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '7_collaboration_governance/glossary.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '7_collaboration_governance/meeting_notes.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'SECURITY.md', LF will be replaced by CRLF the next time Git touches it
+[1mdiff --git a/.github/ISSUE_TEMPLATE/bug_report.md b/.github/ISSUE_TEMPLATE/bug_report.md[m
+[1mindex 9ed617a..cd1b71b 100644[m
+[1m--- a/.github/ISSUE_TEMPLATE/bug_report.md[m
+[1m+++ b/.github/ISSUE_TEMPLATE/bug_report.md[m
+[36m@@ -10,8 +10,8 @@[m [mabout: Create a report to help us improve[m
+ **Expected behavior**[m
+ [m
+ **Environment**[m
+[32m+[m
+ - App version:[m
+ - OS/Device:[m
+ [m
+ **Additional context**[m
+[31m-[m
+[1mdiff --git a/.github/ISSUE_TEMPLATE/feature_request.md b/.github/ISSUE_TEMPLATE/feature_request.md[m
+[1mindex 31b6fa3..5514710 100644[m
+[1m--- a/.github/ISSUE_TEMPLATE/feature_request.md[m
+[1m+++ b/.github/ISSUE_TEMPLATE/feature_request.md[m
+[36m@@ -12,4 +12,3 @@[m [mabout: Suggest an idea for TrustMesh[m
+ **Risks & assumptions**[m
+ [m
+ **Definition of done**[m
+[31m-[m
+[1mdiff --git a/.github/PULL_REQUEST_TEMPLATE.md b/.github/PULL_REQUEST_TEMPLATE.md[m
+[1mindex 7b24728..7c28581 100644[m
+[1m--- a/.github/PULL_REQUEST_TEMPLATE.md[m
+[1m+++ b/.github/PULL_REQUEST_TEMPLATE.md[m
+[36m@@ -3,10 +3,10 @@[m
+ Explain the change and the problem it solves.[m
+ [m
+ ## Checklist[m
+[32m+[m
+ - [ ] Updates relevant docs[m
+ - [ ] Follows style guide[m
+ - [ ] Adds/updates diagrams if architecture changed[m
+ - [ ] Links to related issues/decisions[m
+ [m
+ ## Screenshots/Diagrams (if applicable)[m
+[31m-[m
+[1mdiff --git a/1_overview/positioning.md b/1_overview/positioning.md[m
+[1mindex 4a46d26..43bbc11 100644[m
+[1m--- a/1_overview/positioning.md[m
+[1m+++ b/1_overview/positioning.md[m
+[36m@@ -1,6 +1,5 @@[m
+ # Positioning & Narrative[m
+ [m
+ - **Tagline:** Commit your trust. Shape the mesh.[m
+[31m-- **One-liner:** A decentralized, revocable trust layer—no likes, no followers, just verified commitments.[m
+[32m+[m[32m- **One-liner:** A decentralized, revocable trust layerï¿½no likes, no followers, just verified commitments.[m
+ - **Why now:** Privacy-preserving reputation and small-cohort networks outperform vanity metrics.[m
+[31m-[m
+[1mdiff --git a/1_overview/vision.md b/1_overview/vision.md[m
+[1mindex 4eb15a3..26ffbca 100644[m
+[1m--- a/1_overview/vision.md[m
+[1m+++ b/1_overview/vision.md[m
+[36m@@ -1,13 +1,15 @@[m
+[31m-# Vision & Mission[m
+[31m-[m
+[31m-**Vision:** TrustMesh turns everyday acts of trust into a portable, verifiable social signal—privacy-first and human-centered.[m
+[31m-[m
+[31m-**Mission:** Ship a mobile-first, Hedera-backed trust layer with **non-custodial wallets** and **9 revocable trust slots** per person, optimized for research-grade integrity and campus-scale adoption.[m
+[31m-[m
+[31m-**Key Differentiators**[m
+[31m-- Scarcity & revocability (9 slots, quiet unbonding)[m
+[31m-- Cohort-salted pseudonymity; privacy by design[m
+[31m-- HCS-first event stream; deterministic state spec[m
+[31m-- Research alignment (IRB-ready modes, aggregate visibility)[m
+[31m-[m
+[31m-**Target Audiences**: Students (RAs/residents), faculty/researchers, civic orgs.[m
+[32m+[m[32m# Vision[m
+[32m+[m[32m**Make trust portable.** TrustMesh maps intentional, IRL commitments into a verifiable, privacy-preserving network.[m
+[32m+[m
+[32m+[m[32m## Mission[m
+[32m+[m[32mDeliver a mobile-first, Hedera-backed trust layer with:[m
+[32m+[m[32m- **9 device-bound commitment slots** (Circle of Trust)[m
+[32m+[m[32m- **Quiet unbonding** and immutable acceptance[m
+[32m+[m[32m- **TRST payments** (Brale KYC/AML; MatterFi flows)[m
+[32m+[m[32m- **IRB-ready privacy posture**[m
+[32m+[m[32m- **Contacts (lite trust)** for safe discovery and routing[m
+[32m+[m
+[32m+[m[32m## Differentiators[m
+[32m+[m[32m- Scarce & revocable strong trust (DBTs) + unlimited **lite** contacts[m
+[32m+[m[32m- Hedera-native identity, messaging, and assets[m
+[32m+[m[32m- Licensed kernel for controlled scaling[m
+[1mdiff --git a/2_architecture/api_spec.md b/2_architecture/api_spec.md[m
+[1mindex 2f70571..b028c05 100644[m
+[1m--- a/2_architecture/api_spec.md[m
+[1m+++ b/2_architecture/api_spec.md[m
+[36m@@ -1,11 +1,21 @@[m
+ # API Spec (Draft)[m
+ [m
+[31m-## Events Ingestion[m
+[31m-`POST /v1/events` — accepts signed HCS events for relaying & indexing[m
+[32m+[m[32m## Commitments[m
+[32m+[m[32m- POST /v1/commit ? { slotID, recipientHash, tag, reasonHash? }[m
+[32m+[m[32m- POST /v1/unbond ? { slotID }[m
+[32m+[m[32m- POST /v1/revoke ? { slotID }[m
+[32m+[m[32m- GET  /v1/me/slots ? DBT bitmap + cooldownUntil per slot[m
+ [m
+[31m-## Query[m
+[31m-`GET /v1/edges/:id` — returns anonymized edge weights by tag[m
+[31m-`GET /v1/me/slots` — returns slot bitmap + cooldowns[m
+[32m+[m[32m## Contacts[m
+[32m+[m[32m- POST /v1/contacts ? { contactToken | contactHash, channel }  // QR or invite link claim[m
+[32m+[m[32m- DELETE /v1/contacts/:contactHash[m
+[32m+[m[32m- GET  /v1/me/contacts ? private list; export token for opt-in sharing[m
+ [m
+[31m-## Admin/Research[m
+[31m-`GET /v1/checkpoints/latest` — Merkle root + schema hash[m
+[32m+[m[32m## Messaging (XMTP)[m
+[32m+[m[32m- Client uses **XMTP SDK** directly (send/receive rules: consent, block/report, rate limits)[m
+[32m+[m[32m- POST /v1/bridge/sms-invite ? send SMS invite for wallet claim (STOP/HELP honored)[m
+[32m+[m
+[32m+[m[32m## Checkpoints[m
+[32m+[m[32m- GET /v1/checkpoints/latest ? { merkleRoot, schemaHash, height, ts, topicId }[m
+[32m+[m
+[32m+[m[32mNotes: TRST transfers via Brale/MatterFi; on/off-ramp handled by Brale.[m
+[1mdiff --git a/2_architecture/privacy_security.md b/2_architecture/privacy_security.md[m
+[1mindex 7a83222..b10a9ae 100644[m
+[1m--- a/2_architecture/privacy_security.md[m
+[1m+++ b/2_architecture/privacy_security.md[m
+[36m@@ -1,6 +1,6 @@[m
+ # Privacy, Security & Compliance Design[m
+ [m
+[31m-- Pseudonymization via whats a [m
+[32m+[m[32m- Pseudonymization via whats a[m
+ - Data minimization: plaintext reasons ephemeral ? store hashes + categories[m
+ - IRB/GDPR posture: functional deletion, consent screens, access controls[m
+ - Threats: Sybil, SIM-swap, spam; mitigations documented[m
+[1mdiff --git a/2_architecture/registry_contract_interface.md b/2_architecture/registry_contract_interface.md[m
+[1mindex f047e7c..d177f6d 100644[m
+[1m--- a/2_architecture/registry_contract_interface.md[m
+[1m+++ b/2_architecture/registry_contract_interface.md[m
+[36m@@ -1,17 +1,20 @@[m
+[31m-# Trust Slot Registry — Contract Interface (Draft)[m
+[32m+[m[32m# Trust Slot Registry ï¿½ Contract Interface (Draft)[m
+ [m
+ - **Purpose:** On-chain guardrails for max 9 active commitments per user; indexer becomes a verifier.[m
+ [m
+ ## Storage[m
+[32m+[m
+ - `mapping(address user => uint16 slotsBitmap)` // 9 LSB used[m
+ - `mapping(address user => uint64 nonceCounter)`[m
+ [m
+ ## Methods[m
+[32m+[m
+ - `commit(bytes32 digest, bytes sig)` ? sets bit for `tokenID` after verifying signature[m
+ - `unbond(bytes32 digest, bytes sig)` ? marks slot pending[m
+ - `revoke(bytes32 digest, bytes sig)` ? clears bit post-delay[m
+ - `checkpoint(bytes32 merkleRoot, bytes32 schemaHash)` ? optional anchoring[m
+ [m
+ ## Security[m
+[32m+[m
+ - EIP-191 style signed digests including `chainId`, `topicId`, `nonce`, and `expiry`.[m
+ - Replay protection via `nonceCounter`.[m
+[1mdiff --git a/2_architecture/state_spec_v0.1.md b/2_architecture/state_spec_v0.1.md[m
+[1mindex ddd25d9..f1997dc 100644[m
+[1m--- a/2_architecture/state_spec_v0.1.md[m
+[1m+++ b/2_architecture/state_spec_v0.1.md[m
+[36m@@ -1,29 +1,29 @@[m
+ # State Spec v0.1[m
+ [m
+ ## Event Types[m
+[31m-- `ALLOCATE` — mint/enable slots `0..8` for `userPubKey`[m
+[31m-- `COMMIT` — bind `tokenID` to `recipientHash` with `tag`, optional `reasonHash`[m
+[31m-- `UNBOND` — start quiet-unbond timer for `tokenID`[m
+[31m-- `REVOKE` — finalize removal of an active commitment (post-delay)[m
+[31m-- `RECOVER` — rotate keys/guardians; includes previous key, new key, and proof[m
+[31m-- *(Optional)* `VERIFY` — device/passkey attestation record[m
+[31m-- *(Optional)* `REKEY` — cohort pepper rotation announcement[m
+[32m+[m[32m- `ALLOCATE` ï¿½ enable 9 DBT slots for `userPubKey`[m
+[32m+[m[32m- `COMMIT` ï¿½ bind `slotID` ? `recipientHash` with `tag`, optional `reasonHash`[m
+[32m+[m[32m- `UNBOND` ï¿½ start quiet-unbond timer (`unbondAt`)[m
+[32m+[m[32m- `REVOKE` ï¿½ finalize removal post-delay; frees slot; sets `cooldownUntil`[m
+[32m+[m[32m- `RECOVER` ï¿½ rotate keys/guardians: `{ oldPubKey, newPubKey, guardians[], proof }`[m
+[32m+[m[32m- `VERIFY_DEVICE` ï¿½ device/passkey attestation record (Magic.link)[m
+[32m+[m[32m- `CONTACT_ADD` ï¿½ `{ ownerId, contactId, channel, ts }`[m
+[32m+[m[32m- `CONTACT_REMOVE` ï¿½ remove contact[m
+[32m+[m[32m- `REKEY` ï¿½ cohort pepper rotation announcement[m
+[32m+[m[32m- `CHECKPOINT` ï¿½ indexer announces `{ merkleRoot, schemaHash, height, ts }` to checkpoint topic[m
+ [m
+ ## Required Fields (all events)[m
+[31m-`{ schema: "trustmesh/state/0.1", chainId, topicId, txId, ts, userPubKey, tokenID, nonce, sig }`[m
+[31m-[m
+[31m-Plus per-type fields:[m
+[31m-- `COMMIT`: `{ recipientHash, tag, reasonHash?, cooldownUntil? }`[m
+[31m-- `UNBOND`: `{ tokenID, unbondAt }`[m
+[31m-- `REVOKE`: `{ tokenID, revokeAt }`[m
+[31m-- `RECOVER`: `{ oldPubKey, newPubKey, guardians[], proof }`[m
+[32m+[m[32m{ schema:"trustmesh/state/0.1", chainId, topicId, txId, ts,[m
+[32m+[m[32m  userPubKey, slotID?, nonce, sig, cohortId, pepperVersion }[m
+ [m
+ ## Rules[m
+[31m-- **Idempotency:** `(userPubKey, tokenID, nonce)` unique.[m
+[31m-- **Validity:** tokenID ? [0..8]; only one active commitment per tokenID.[m
+[31m-- **Cooldown:** per-slot; `COMMIT` invalid if now < `cooldownUntil`.[m
+[31m-- **Ordering:** indexers must process by `(ts, txId)`; ties broken by `txId`.[m
+[32m+[m[32m- **Idempotency:** `(userPubKey, (slotID|eventKey), nonce)` unique[m
+[32m+[m[32m- **Slots:** `slotID ? [0..8]`; **one active commitment per slot**[m
+[32m+[m[32m- **Quiet Unbonding:** default **72h** between `UNBOND` and `REVOKE`[m
+[32m+[m[32m- **Cooldown:** per-slot; default **14 days**; `COMMIT` invalid if `now < cooldownUntil`[m
+[32m+[m[32m- **Contacts:** unlimited; private by default; low weight (policy below)[m
+[32m+[m[32m- **Ordering:** reduce by `(ts, txId)`; tie-break on `txId`[m
+[32m+[m[32m- **Checkpoint cadence:** **hourly** Merkle to dedicated HCS topic; verifiers must check continuity[m
+ [m
+[31m-## Checkpointing[m
+[31m-- Indexers produce hourly Merkle roots over deterministic state.[m
+[31m-- Publish `{ merkleRoot, schemaHash, height, ts }` to a dedicated HCS topic.[m
+[32m+[m[32m## Pseudonymity[m
+[32m+[m[32m`recipientHash` and user IDs = `HMAC_SHA256(cohortPepper[vX], E164(phone)|walletAlias)`; peppers via HKDF; stored in KMS/HSM.[m
+[1mdiff --git a/2_architecture/system_architecture.md b/2_architecture/system_architecture.md[m
+[1mindex bf7ce16..58a1be7 100644[m
+[1m--- a/2_architecture/system_architecture.md[m
+[1m+++ b/2_architecture/system_architecture.md[m
+[36m@@ -1,13 +1,18 @@[m
+ # System Architecture[m
+ [m
+ ## Components[m
+[31m-- Mobile web client (React + Tailwind)[m
+[31m-- Messaging (SMS via Twilio, 10DLC compliant)[m
+[31m-- Identity (passkeys/WebAuthn, optional OTP assist)[m
+[31m-- Non-custodial Hedera wallets (Ed25519)[m
+[31m-- HCS10 topics for append-only events (hashinals)[m
+[31m-- Indexer service (stateless validators + Merkle checkpointing)[m
+[31m-- Optional Trust Slot Registry contract (later hardening)[m
+[32m+[m[32m- **Frontend:** React + Tailwind mobile web[m
+[32m+[m[32m- **Identity/Keys:** **Magic.link** (passkeys/WebAuthn) for key management & recovery (DeRec post-MVP)[m
+[32m+[m[32m- **Messaging:** **XMTP SDK** (wallet/alias chat; E2E). **SMS only** for invites/claims. HCS10 for campaign/system triggers.[m
+[32m+[m[32m- **Payments:** **TRST stablecoin** via **Brale** (KYC/AML + custody/compliance) with **MatterFi SDK**; **KNS** Send-to-Name; QR-pay[m
+[32m+[m[32m- **Engagement:** Hedera **NFTs** (redeemable/POAP-style) + **hashinals** (portable reputation artifacts)[m
+[32m+[m[32m- **Commitment Layer:** **Circle of Trust Registry** (contract) enforcing **9 device-bound tokens (DBTs)** per user, quiet unbonding & per-slot cooldowns[m
+[32m+[m[32m- **Contacts Layer:** Unlimited, consented contact graph (private by default; low weight)[m
+[32m+[m[32m- **Indexer:** Stateless validators + deterministic reducer + **hourly Merkle checkpoint** to a dedicated HCS topic[m
+[32m+[m[32m- **Secrets & Privacy:** Cohort-peppered HMAC IDs derived in **KMS/HSM**; pepper versioning & rotation[m
+ [m
+[31m-## Diagrams[m
+[31m-See `/assets/diagrams/` and keep SVG source committed.[m
+[32m+[m[32m## Data Flows[m
+[32m+[m[32m- **Commitment:** COMMIT ? (UNBOND) ? REVOKE; registry updates bitmap; indexer reduces to edges; hourly checkpoint[m
+[32m+[m[32m- **Contacts:** CONTACT_ADD/REMOVE; indexer maintains private graph; opt-in sharing[m
+[32m+[m[32m- **Messaging:** XMTP consent/block/report + rate limits; HCS triggers; SMS invites only[m
+[32m+[m[32m- **Payments:** TRST transfers via Brale/MatterFi; KNS resolution; policy **pay trusted first**[m
+[1mdiff --git a/4_research_academic/data_privacy.md b/4_research_academic/data_privacy.md[m
+[1mindex 4ab0df4..b37fbf2 100644[m
+[1m--- a/4_research_academic/data_privacy.md[m
+[1m+++ b/4_research_academic/data_privacy.md[m
+[36m@@ -1,5 +1,8 @@[m
+[31m-# Research Data Privacy Protocols[m
+[32m+[m[32m# Data Privacy (IRB-Ready)[m
+ [m
+[31m-- Pseudonymization pipeline[m
+[31m-- Access controls, aggregation thresholds[m
+[31m-- Functional deletion process[m
+[32m+[m[32m- **Pseudonymity**: IDs via **cohort-peppered HMAC**; peppers in **KMS/HSM**; rotate with `REKEY`.[m
+[32m+[m[32m- **Minimal on-chain**: Store **reasonHash** only; plaintext held ephemerally for moderation.[m
+[32m+[m[32m- **Contacts**: Consent required (QR/SMS link click). Contacts private by default; opt-in sharing.[m
+[32m+[m[32m- **Visibility**: Public dashboards show **aggregate tag trends**; no identities without consent.[m
+[32m+[m[32m- **Functional deletion**: On request, stop indexing a subjectï¿½s events and remove from aggregates; ledger entries remain for integrity.[m
+[32m+[m[32m- **Compliance**: GDPR + **CCPA**; campus pilots include **FERPA** notes.[m
+[1mdiff --git a/5_development_plan/mvp_scope.md b/5_development_plan/mvp_scope.md[m
+[1mindex f57e600..c07a055 100644[m
+[1m--- a/5_development_plan/mvp_scope.md[m
+[1m+++ b/5_development_plan/mvp_scope.md[m
+[36m@@ -1,4 +1,20 @@[m
+ # MVP Scope[m
+ [m
+[31m-- HCS-first events, indexer, mobile UI, passkeys, SMS claim.[m
+[31m-- Quiet unbonding, per-slot cooldowns, rate limits.[m
+[32m+[m[32m**In scope**[m
+[32m+[m[32m- Messaging loop (**XMTP SDK**; HCS10 triggers; **SMS invites only**)[m
+[32m+[m[32m- Payments loop (**TRST via Brale/MatterFi**; KNS)[m
+[32m+[m[32m- Engagement loop (NFT/hashinal rewards)[m
+[32m+[m[32m- Circle of Trust (9 **DBTs**; quiet unbonding; per-slot cooldown)[m
+[32m+[m[32m- **Contacts (lite trust)** ï¿½ unlimited, low weight, private by default[m
+[32m+[m[32m- Indexer with **hourly** Merkle checkpoints to HCS topic[m
+[32m+[m[32m- Privacy: cohort-peppered HMAC, functional deletion[m
+[32m+[m[32m- Recovery: **Magic.link** (passkeys); **DeRec post-MVP**[m
+[32m+[m
+[32m+[m[32m**Post-MVP**[m
+[32m+[m[32m- DeRec-based recovery[m
+[32m+[m[32m- Governance/DAO mechanics[m
+[32m+[m[32m- Multi-rail payments[m
+[32m+[m
+[32m+[m[32m**Out of scope (MVP)**[m
+[32m+[m[32m- Non-TRST payment rails[m
+[32m+[m[32m- Global ï¿½reputation scoresï¿½ (aggregate trends only)[m
+[1mdiff --git a/5_development_plan/risk_assessment.md b/5_development_plan/risk_assessment.md[m
+[1mindex e5ac1f0..5f5e03d 100644[m
+[1m--- a/5_development_plan/risk_assessment.md[m
+[1m+++ b/5_development_plan/risk_assessment.md[m
+[36m@@ -1,5 +1,10 @@[m
+[31m-# Risks & Mitigations[m
+[32m+[m[32m# Risk Assessment[m
+ [m
+[31m-- SIM swap / number recycling ? SSO attestations, delayed rekeys[m
+[31m-- SMS deliverability ? 10DLC, STOP/HELP, content tuning[m
+[31m-- Abuse/toxicity ? filters, structured reasons, burn/report[m
+[32m+[m[32m| Risk | Likelihood | Impact | Mitigation |[m
+[32m+[m[32m|---|---:|---:|---|[m
+[32m+[m[32m| Brale/MatterFi outage or geo restriction | Med | High | Queue + retry; UX banner; degrade to non-payment flows |[m
+[32m+[m[32m| XMTP spam/abuse | Med | Med | Opt-in DMs; block/report; per-address rate limits; contact/mutual-first routing |[m
+[32m+[m[32m| SIM swap / key compromise | Med | High | **Magic.link** recovery; delayed rebind; anomaly alerts; optional SSO/email attestation |[m
+[32m+[m[32m| Mirror-node lag / checkpoint divergence | Low | High | Deterministic reducer; **hourly** Merkle; independent verifiers |[m
+[32m+[m[32m| Reward farming | Med | Med | Proof-of-presence gates; device heuristics; cooldowns |[m
+[32m+[m[32m| KNS squatting/impersonation | Med | Med | Reservation policy; verified names; rename audit log |[m
+[1mdiff --git a/6_legal_compliance/tcpacompliance.md b/6_legal_compliance/tcpacompliance.md[m
+[1mindex cff590d..906b88d 100644[m
+[1m--- a/6_legal_compliance/tcpacompliance.md[m
+[1m+++ b/6_legal_compliance/tcpacompliance.md[m
+[36m@@ -1,5 +1,6 @@[m
+ # TCPA / 10DLC Compliance[m
+ [m
+[31m-- Explicit opt-in; STOP/HELP handling[m
+[31m-- Campaign registration & template review[m
+[31m-- Record-keeping[m
+[32m+[m[32m- **Channel use**: SMS is **invite/claim only**. All ongoing chat occurs in **XMTP**.[m
+[32m+[m[32m- **Consent**: Explicit consent for SMS invites; **STOP/HELP** honored and logged.[m
+[32m+[m[32m- **Registration**: 10DLC campaign registration; content templates whitelisted.[m
+[32m+[m[32m- **Record-keeping**: Store consent artifacts and STOP logs; periodic audits.[m
+[1mdiff --git a/7_collaboration_governance/glossary.md b/7_collaboration_governance/glossary.md[m
+[1mindex 3dc379e..2a8566d 100644[m
+[1m--- a/7_collaboration_governance/glossary.md[m
+[1m+++ b/7_collaboration_governance/glossary.md[m
+[36m@@ -1,6 +1,12 @@[m
+ # Glossary[m
+ [m
+[31m-- **Commit (verb):** Allocate one trust slot to a recipient.[m
+[31m-- **Quiet Unbonding:** Delay period before a commitment is revoked.[m
+[31m-- **Checkpoint:** Merkle-root summary of deterministic state.[m
+[31m-- **Cohort Pepper:** Secret used for HMAC pseudonymization per cohort.[m
+[32m+[m[32m- **Device-Bound Token (DBT):** One of a userï¿½s **nine** commitment slots; bound to device key; non-transferable; revocable.[m
+[32m+[m[32m- **Circle of Trust:** The 9-slot strong trust model with quiet unbonding & cooldown.[m
+[32m+[m[32m- **Contact (Lite Trust):** Unlimited, consented connection used for discovery/routing; private by default; low analytic weight.[m
+[32m+[m[32m- **Quiet Unbonding:** ~72h delay before commitment removal; reduces social shock.[m
+[32m+[m[32m- **Checkpoint:** Hourly Merkle root of reduced state published to HCS.[m
+[32m+[m[32m- **Hashinal:** Portable Hedera-native reputation artifact (non-financial).[m
+[32m+[m[32m- **TRST:** Scendï¿½s stablecoin rail on Hedera; **Brale handles KYC/AML**.[m
+[32m+[m[32m- **KNS:** Human-readable Send-to-Name addressing with reservation/rename policy.[m
+[32m+[m[32m- **XMTP:** End-to-end encrypted wallet chat; **not SMS**.[m
+[32m+[m[32m- **Cohort Pepper:** Secret used to derive pseudonymous IDs per cohort; versioned & rotated.[m
+[1mdiff --git a/7_collaboration_governance/meeting_notes.md b/7_collaboration_governance/meeting_notes.md[m
+[1mindex 537e92d..59cdd24 100644[m
+[1m--- a/7_collaboration_governance/meeting_notes.md[m
+[1m+++ b/7_collaboration_governance/meeting_notes.md[m
+[36m@@ -1,6 +1,7 @@[m
+ # Meeting Notes[m
+ [m
+ Template:[m
+[32m+[m
+ - Date/Time[m
+ - Attendees[m
+ - Decisions[m
+[1mdiff --git a/README.md b/README.md[m
+[1mindex 129ac51..83e6897 100644[m
+[1m--- a/README.md[m
+[1m+++ b/README.md[m
+[36m@@ -1,24 +1,42 @@[m
+ # TrustMesh Documentation Repository[m
+ [m
+[31m-This repository hosts the **authoritative corpus** for TrustMesh: product vision, technical architecture, UX, research posture, governance, and compliance.[m
+[31m-[m
+[31m-## How this repo is organized[m
+[31m-- `1_overview/` — Vision, positioning, principles[m
+[31m-- `2_architecture/` — System design, protocols, specs[m
+[31m-- `3_ux_workflows/` — Flows, wireframes, interaction patterns[m
+[31m-- `4_research_academic/` — Research alignment, KPIs, pilot plans[m
+[31m-- `5_development_plan/` — Roadmaps, sprints, risks, deployment[m
+[31m-- `6_legal_compliance/` — GDPR, TCPA, ToS, retention/deletion[m
+[31m-- `7_collaboration_governance/` — Contrib guide, comms, style, glossary[m
+[31m-- `assets/` — Diagrams, wireframes, and exported visuals[m
+[31m-- `secure/` — **Sensitive docs** (git-ignored); store encrypted or off-repo[m
+[31m-[m
+[31m-## Quick start[m
+[31m-1. Read `1_overview/vision.md`.[m
+[31m-2. Engineers start at `2_architecture/system_architecture.md` and `2_architecture/state_spec_v0.1.md`.[m
+[31m-3. Designers start at `3_ux_workflows/sms_flow.md`.[m
+[31m-4. For pilots/academics, see `4_research_academic/`.[m
+[31m-[m
+[31m-## Contributing[m
+[31m-See `7_collaboration_governance/contribution_guidelines.md` and `.github/PULL_REQUEST_TEMPLATE.md`.[m
+[32m+[m[32mThis repository is the **authoritative source** for the TrustMesh product vision, architecture, UX, compliance, and deployment model ï¿½ built on the Scend Context Engineering kernel.[m
+ [m
+[32m+[m[32m## Core Mandate[m
+[32m+[m[32mTrustMesh is a **Hedera-first**, privacy-preserving trust graph that turns IRL trusted relationships into **cryptographically verifiable commitments**.[m
+[32m+[m
+[32m+[m[32mEvery deployment must implement the **three context loops** in this order:[m
+[32m+[m[32mNOTE: Context Loops are sequential in activation (Messaging must be live before Payments, before Engagement) ï¿½ this matches the operating philosophy in CONTEXT_ENGINNERING.md[m
+[32m+[m
+[32m+[m[32m1. **Messaging** ï¿½ **XMTP-powered** threads by wallet or alias. *XMTP is not SMS.* SMS is used only for **invites/claims**; all chat occurs over XMTP. HCS10 emits system/campaign triggers.[m
+[32m+[m[32m2. **Payments** ï¿½ **TRST stablecoin** via **Brale** (KYC/AML + custody/compliance) with **MatterFi SDK** for flows. Wallets auto-provisioned; **Send-to-Name (KNS)** and QR-pay supported.[m
+[32m+[m[32m3. **Engagement** ï¿½ Hedera **NFT/hashinal** rewards and **Circle of Trust** allocations (9 **device-bound** commitment slots per user, quiet unbonding, immutable acceptance).[m
+[32m+[m
+[32m+[m[32m### Non-Negotiables[m
+[32m+[m[32m- **TRST is the only payment rail** for stablecoin flows in MVP (**Brale handles KYC/AML**).[m
+[32m+[m[32m- **Circle of Trust** governs strong trust: **9 device-bound tokens (DBTs)** per user; revocable with quiet unbonding and per-slot cooldowns.[m
+[32m+[m[32m- **Contacts (lite trust) are included**: unlimited, consented connections for discovery/routing; low weight; private by default.[m
+[32m+[m[32m- **Hedera-first**: HTS for assets, HCS10 for events, hashinals for portable reputation.[m
+[32m+[m[32m- **Licensed kernel** ï¿½ not public open source. Cloning/deployments require contractual authorization.[m
+[32m+[m
+[32m+[m[32m## Repository Structure[m
+[32m+[m[32m- **1_overview/** ï¿½ Vision, positioning, Circle of Trust principles[m[41m  [m
+[32m+[m[32m- **2_architecture/** ï¿½ Hedera-based system design, protocol, specs[m[41m  [m
+[32m+[m[32m- **3_ux_workflows/** ï¿½ Loop-driven UX (Messaging ? Payments ? Engagement)[m[41m  [m
+[32m+[m[32m- **4_research_academic/** ï¿½ Research alignment, IRB-ready privacy posture[m[41m  [m
+[32m+[m[32m- **5_development_plan/** ï¿½ MVP scope, sprints, risks, deployment[m[41m  [m
+[32m+[m[32m- **6_legal_compliance/** ï¿½ GDPR, CCPA, TCPA, data retention[m[41m  [m
+[32m+[m[32m- **7_collaboration_governance/** ï¿½ Contribution guidelines, glossary, style[m[41m  [m
+[32m+[m[32m- **assets/** ï¿½ Diagrams, wireframes, visuals[m[41m  [m
+[32m+[m[32m- **secure/** ï¿½ Sensitive docs (git-ignored; encrypt or store off-repo)[m
+[32m+[m
+[32m+[m[32m## Quick Start[m
+[32m+[m[32m1. Read `1_overview/vision.md` and `positioning.md`.[m[41m  [m
+[32m+[m[32m2. Engineers: `2_architecture/system_architecture.md` + `state_spec_v0.1.md`.[m[41m  [m
+[32m+[m[32m3. Designers: `3_ux_workflows/circle_of_trust_flow.md` + `wallet_creation.md`.[m[41m  [m
+[32m+[m[32m4. Pilots/research: `4_research_academic/`.[m
+[32m+[m
+[32m+[m[32m## Licensing & Deployment[m
+[32m+[m[32m- **Private kernel** ï¿½ licensed via Scend Technologies, LLC.[m[41m  [m
+[32m+[m[32m- Cloneable for approved partners (civic, campus, enterprise).[m[41m  [m
+[32m+[m[32m- **No public open-source distribution**.[m
+[1mdiff --git a/SECURITY.md b/SECURITY.md[m
+[1mindex c110d78..fc068b7 100644[m
+[1m--- a/SECURITY.md[m
+[1m+++ b/SECURITY.md[m
+[36m@@ -3,4 +3,3 @@[m
+ - Report vulnerabilities privately to security@trustmesh.example (replace with real address).[m
+ - Do not open public issues for undisclosed vulnerabilities.[m
+ - We follow a 90-day disclosure window, accelerated for severe issues.[m
+[31m-[m
